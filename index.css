@@ -1,0 +1,1129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+     
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+/*  font-weight: weight;*/
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    background-color:#07111D ;
+    color: white;
+   
+}
+
+.first-point {
+      display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 30px;
+    padding-block: 12px;
+    height: 57px;
+}
+
+.second-point {
+  /*  list-style: none;
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-inline-start: 436px;*/
+list-style: none;
+    display: flex;
+   /* width: 900px;*/
+    cursor: pointer;
+    justify-content: end;
+    column-gap: 60px;
+}
+
+.name-motion {
+ font-weight: 600;
+}
+
+.flex-motion {
+
+    display: flex;
+    
+    justify-content: end;
+    column-gap: 71px;
+    align-items: center;
+    width: fit-content;
+}
+
+.download{
+    background-color: #D01CFD;
+    padding-inline: 12px;
+    padding-block: 8px;
+    border-radius: 60px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    transition: 1000ms;
+}
+
+.download:hover {
+    color: #D01CFD;
+    box-shadow: 0px 0px 3px 2px #D01CFD;
+    background: transparent;
+}
+
+.second-point-child {
+
+    width: max-content;
+    position: relative;
+   
+}
+
+
+
+
+.second-point-child::after {
+      content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    top: 20px;
+    transition: 0.3s ease-in-out;
+
+    background-color: #D01CFD;
+    transform: scaleX(0);
+    
+}
+
+.second-point-child:hover::after {
+    transform: scaleX(1);
+}
+
+
+.navBar {
+    /*   background-color: #323035e3;*/
+    
+    transition: 500ms;
+    position: fixed;
+    top: -2px;
+    width: 100%;
+    z-index: 1;
+}
+
+.imgProfil {
+
+      width: 268px;
+    height: 266px;
+    border-radius: 170px;
+}
+
+.profilCenter {
+    height: 640px;
+    display: flex;
+    padding-block-start: 140px;
+    margin-inline: 200px;
+    justify-content: space-between;
+}
+
+.titleProfil {
+    margin-block-end: 30px;
+    display: flex;
+    column-gap: 3px;
+    font-size: 25px;}
+
+
+.roleProfil {
+ transition:  0.5s ease-in-out;   
+font-size: 35px;
+margin-block-end: 30px;
+height: 48px;
+color: #D01CFD;
+font-weight: 600;
+width: 500px
+}
+
+.elementAbout {
+
+    font-size: 25px;
+}
+
+
+
+
+.img-reduce {
+
+    width: 250px;
+    background-color: black;
+    border-radius: 10px;
+    height: 250px;
+}
+
+.img-reduce1 {
+    height: 250px;
+    object-fit: cover;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.img-reduce2 {
+    width: 250px;
+    height: 250px;
+    object-fit: fill;
+    border-radius: 10px;
+}
+
+.elementCard{
+     background-color: #ffffff14;
+    padding-block-start: 15px;
+    width: 270px;
+    box-shadow: grey 0px 0px 3px 1px;
+    border-radius: 10px;
+    padding-inline: 10px;
+}
+
+.cardSection {
+display: flex;
+    flex-wrap: wrap;
+    gap: 46px;
+    background-color: #8016ad29;
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.section {
+  margin-inline: 200px;
+    margin-block-end: 100px;
+    padding-block-start: 100px;
+}
+
+.titleSection {
+    font-size: 30px;
+    margin-block-end: 40px;
+}
+.contain {
+  display: flex;
+    column-gap: 100px;
+    align-items: center;
+    padding-block: 10px;
+}
+
+.bounce {
+    width: 15px;
+    height: 15px;
+    background-color: #D01CFD;
+    border-radius: 60px;
+}
+
+.contain1{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  column-gap: 5px;
+}
+
+.contain2{
+      display: flex;
+    column-gap: 165px;
+    align-items: center;
+    padding-block: 10px;
+}
+
+.elementpint {
+    background-color: darkslategrey;
+    border-radius: 10px;
+}
+.gradeColor {
+    width: 275px;
+    height: 187px;
+    background-color: #D01CFD;
+    border-radius: 200px;
+    filter: blur(163px);
+    position: absolute;
+    z-index: -2;
+}
+
+.gradeColor1 {
+    top: 320px;
+    width: 419px;
+    height: 187px;
+    background-color: #D01CFD;
+    border-radius: 200px;
+    filter: blur(196px);
+    position: absolute;
+    left: 893px;
+    z-index: -2;
+}
+
+.gradeColor2 {
+top: 850px;
+    width: 419px;
+    height: 187px;
+    background-color: #D01CFD;
+    border-radius: 200px;
+    filter: blur(196px);
+    position: absolute;
+    left: 0px;
+    z-index: -2;
+}
+
+.gradeColor9 {
+top: 850px;
+    width: 419px;
+    height: 187px;
+    background-color: #D01CFD;
+    border-radius: 200px;
+    filter: blur(196px);
+    position: absolute;
+    left: 0px;
+    z-index: -2;
+    display: none;
+    
+}
+
+
+.gradeColor3 {
+top: 1271px;
+    width: 419px;
+    height: 187px;
+    background-color: #D01CFD;
+    border-radius: 200px;
+    filter: blur(196px);
+    position: absolute;
+    left: 893px;
+    z-index: -2;
+}
+
+.gradeColor4 {
+    top: 1743px;
+    width: 419px;
+    height: 187px;
+    background-color: #D01CFD;
+    border-radius: 200px;
+    filter: blur(196px);
+    position: absolute;
+    left: 0px;
+    z-index: -2;
+}
+
+.gradeColor5 {
+    top: 2267px;
+    width: 419px;
+    height: 187px;
+    background-color: #D01CFD;
+    border-radius: 200px;
+    filter: blur(196px);
+    position: absolute;
+    left: 893px;
+    z-index: -2;
+}
+
+.gradeColor6 {
+    top: 2600px;
+    width: 419px;
+    height: 187px;
+    background-color: #D01CFD;
+    border-radius: 200px;
+    filter: blur(196px);
+    position: absolute;
+    left: 0px;
+    z-index: -2;
+}
+
+
+.gradeColor7 {
+    top: 3022px;
+    width: 419px;
+    height: 187px;
+    background-color: #D01CFD;
+    border-radius: 200px;
+    filter: blur(196px);
+    position: absolute;
+    left: 893px;
+    z-index: -2;
+}
+
+
+.gradeColor8 {
+    top: 3472px;
+    width: 419px;
+    height: 187px;
+    background-color: #D01CFD;
+    border-radius: 200px;
+    filter: blur(196px);
+    position: absolute;
+    left: 0px;
+    z-index: -2;
+}
+
+
+
+
+.elementRid {
+    display: flex;
+    column-gap: 30px;
+}
+
+.punch {
+    width: 33px;
+}
+
+.elementContact {
+    width: 420px;
+    height: 40px;
+    border-radius: 5px;
+    padding-inline: 3px;
+    border: none;
+    outline: none;
+}
+
+.elementContactMessage {
+    padding-block-start: 10px;
+    width: 420px;
+    height: 40px;
+    border-radius: 5px;
+    padding-inline: 3px;
+    border: none;
+    outline: none;
+}
+
+.elementContact1 {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    padding-inline: 3px;
+    border: none;
+    outline: none;
+}
+
+.elementFormUser {
+
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 20px;
+}
+
+
+.elementForm {
+    display: grid
+;
+margin-block-end: 20px;
+}
+
+.contactForm{
+    display: flex;
+    justify-content: space-between;
+}
+
+.drapPoint {
+    width: 300px;
+    margin-block-end: 15px;
+}
+
+.elementTitleForm {
+    padding-block-end: 5px;
+}
+
+
+
+.btn-1:hover{
+
+ color: #D01CFD;
+    box-shadow: 0px 0px 3px 2px #D01CFD;
+    background: transparent;
+
+}
+
+.margeForm {
+background-color: #ffffff24;
+    padding-inline: 20px;
+    padding-block: 16px;
+    border-radius: 10px;   
+}
+
+ .elementForm1 {
+   display: flex ;
+   justify-content: end;
+    padding-block-start: 16px;
+
+ }
+
+ .btn-form {
+
+      width: 420px;
+    height: 40px;
+    border-radius: 5px;
+    padding-inline: 3px;
+    border: none;
+    outline: none;
+     background-color: #D01CFD;
+     font-size: 20px;
+     color: white;
+     transition: 1000ms ;
+    
+ }
+
+ .btn-form:hover {
+
+    color: #D01CFD;
+    box-shadow: 0px 0px 3px 2px #D01CFD;
+    background-color: transparent;
+ }
+
+ .punch:hover {
+
+    scale: 2;
+    transition: 1000ms;
+ }
+
+ .elementCard:hover {
+    box-shadow: aqua 0px 0px 3px 1px;
+    transition: 800ms;
+    scale: 1.1;
+ }
+
+  .btnModulo {
+    padding-inline: 30px;
+    padding-block: 8px;
+    font-size: 15px;
+    border-radius: 60px;
+    background-color: #D01CFD;
+    outline: none;
+    border: none;
+    color: white;
+  }
+
+  .btnModulo:hover{
+    background-color: transparent;
+    color: #D01CFD;
+    box-shadow: 0px 0px 3px 2px #D01CFD;
+         transition: 1000ms ;
+
+  }
+
+  .btnModulo1 {
+    padding-inline: 30px;
+    padding-block: 8px;
+    font-size: 15px;
+    border-radius: 60px;
+    background-color: #D01CFD;
+    outline: none;
+    border: none;
+    color: white;
+         transition: 1000ms ;
+
+  }
+
+  .btnModulo1:hover{
+    background-color: transparent;
+    color: #D01CFD;
+    box-shadow: 0px 0px 3px 2px #D01CFD;
+
+  }
+
+  .dressButton {
+     width: 423px;
+    display: flex;
+    justify-content: space-between;
+    margin-block-start: 30px;
+  }
+
+  .elementUnderline {
+    color: white;
+    text-decoration: none;
+    border: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+
+ @media screen and (max-width:1327px) {
+
+    .gradeColor1 , .gradeColor3 , .gradeColor5 , .gradeColor7  {
+  
+    left: 800px;
+}
+
+
+    
+ }
+
+
+ @media screen and (max-width:1234px) {
+
+    .gradeColor1 , .gradeColor3 , .gradeColor5 , .gradeColor7  {
+  
+    left: 707px;
+}
+
+
+    
+ }
+
+
+
+
+
+ @media screen and (max-width:1141px) {
+
+    .gradeColor1 , .gradeColor3 , .gradeColor5 , .gradeColor7  {
+  
+    left: 615px;
+}
+
+
+    
+ }
+
+
+  @media screen and (max-width:1049px) {
+
+    .gradeColor1 , .gradeColor3 , .gradeColor5 , .gradeColor7  {
+  
+    left: 522px;
+}
+
+
+    
+ }
+
+
+    @media screen and (max-width:980px) {
+
+    .flex-motion {
+    display: flex
+;
+    width: fit-content;
+    justify-content: end;
+    column-gap: 50px;
+    align-items: center;
+}
+   .second-point {
+    list-style: none;
+    display: flex
+;
+    /* width: 900px; */
+    cursor: pointer;
+    justify-content: end;
+    column-gap: 39px;
+}
+
+    
+ }
+
+
+  @media screen and (max-width:956px) {
+
+    .gradeColor1 , .gradeColor3 , .gradeColor5 , .gradeColor7  {
+  
+    left: 429px;
+}
+
+ .profilCenter {
+
+    column-gap: 10px;
+ }
+
+
+    
+ }
+
+
+
+   @media screen and (max-width:863px) {
+
+    .gradeColor1 , .gradeColor3 , .gradeColor5 , .gradeColor7  {
+  
+    left: 300px;
+}
+ 
+ }
+
+
+
+   @media screen and (max-width:734px) {
+
+    .gradeColor1 , .gradeColor3 , .gradeColor5 , .gradeColor7  {
+  
+    left: 200px;
+}
+ 
+ }
+
+
+ @media  screen and (max-width:827px) {
+
+  /*  .second-point-child::after {   
+
+        display: none;
+
+    }*/
+
+     .elementUnderline{ 
+              display: block;
+        width: auto;
+       /* padding-block: 15px;*/
+        border-radius: 10px;
+    
+
+    }
+
+  /*  .section {
+        margin-block-start: 100px;
+    }
+
+  /*  .elementUnderline:hover {
+
+        background-color: #D01CFD;
+
+            transition: 0.3s ease-in-out;
+
+
+    }*/
+
+    .download {
+
+        display: none;
+    }
+
+    .navBar {
+     background-color: #323035e3;
+     }
+
+    .second-point {
+    display:none;
+    position: absolute;
+    background-color: #323035e3;
+    width: -webkit-fill-available;
+    left: 0;
+    top: 57px;
+    height: 310px;
+    justify-content: start;
+    align-items: center;
+    padding-inline: 30px;
+    }
+
+
+    .second-point.open {
+        display: grid
+;
+        justify-content: start;
+    
+    }
+
+    .hamburger {
+
+        display: block;
+    }
+
+   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+
+     background-color: white;
+   }
+
+
+   .hamburger.is-active .hamburger-inner::before  , .hamburger.is-active .hamburger-inner::after  {
+    background-color: white;
+}
+
+
+   .hamburger--collapse.is-active .hamburger-inner {
+    
+    background:white;
+}
+
+
+.dressButton {
+    width: auto;
+    display: flex
+;
+    justify-content: space-between;
+    margin-block-start: 30px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+ 
+ }
+
+ .elementProfilCard {
+    
+    background-color: #D01CFD;
+    /* border-radius: 173px; */
+    height: 273px;
+    width: 274px;
+    display: grid;
+    align-items: center;
+    border-radius: 243px;
+    justify-content: center;
+ }
+
+
+ @media  screen and (max-width:1015px) {
+    
+    .profilCenter {
+        margin-inline: 133px;
+    }
+ }
+
+ @media screen and (max-width:960px) {
+
+    .profilCenter {
+        column-gap: 6px; 
+       margin-inline: 30px;
+    }
+    
+ }
+
+ @media screen and (max-width:901px) {
+
+
+    .profilCenter {
+
+    display: grid;
+    justify-items: center;
+    margin-block-end: 230px;
+    }
+
+   .commentProfil {
+
+    font-size: 30px;
+     width: auto;
+   }
+
+   .imgProfil {
+
+    width: 300px;
+    height: 300px;
+    border-radius: 500px;
+   }
+
+   .elementProfilCard {
+
+    width: 309px;
+    height: 309px;
+    border-radius: 500px;
+    margin-block-start: 50px;
+   }
+
+
+   .btn-build:hover {
+
+  color: #D01CFD;
+    box-shadow: 0px 0px 3px 2px #D01CFD;
+    background: transparent;
+
+    
+ }
+
+   .gradeColor1 , .gradeColor3 , .gradeColor5 , .gradeColor7  {
+  
+    left: 100px;
+}
+
+    .titleProfil {
+        width: fit-content;
+    }
+
+    .roleProfil{
+        width: fit-content;
+    }
+
+
+    .elementProvider {
+        display: none;
+    }
+
+
+    .elementContact1 {
+    width: 300px;
+    
+}
+
+.elementContact {
+    width: 618px;
+   
+}
+
+.elementContactMessage {
+   
+    width: 618px;
+    height: 200px;
+   
+}
+
+.btn-form {
+    width: 618px;
+    
+}
+.contactForm {
+    display: flex;
+    justify-content: center;
+}
+
+
+  .btn-build {
+    background-color: #D01CFD;
+    padding-inline: 30px;
+    padding-block: 8px;
+    border-radius: 60px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    margin-block-start: 30px;
+    transition: 1000ms;
+  }
+
+  .btn-1 {
+    display: none;
+  }
+
+ }
+
+ @media screen and (min-width:902px){
+
+
+    .commentProfil {
+font-size: 30px;
+    width: 483px;
+display: none;
+
+}
+
+    .btn-build {
+   display: none;
+  }
+
+  .btn-1 {
+  background-color: #D01CFD;
+    padding-inline: 30px;
+    padding-block: 8px;
+    border-radius: 60px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    transition: 1000ms;  }
+
+ }
+
+
+
+
+
+ .elementRill {
+
+    display: flex;
+    justify-content: space-between ;
+ }
+/*
+@media  screen and (max-width:1130px) {
+    
+    .profilCenter {
+
+        column-gap: 60px;
+    }
+}*/
+
+@media screen and (max-width:534px) {
+    
+    .gradeColor1, .gradeColor3, .gradeColor5, .gradeColor7 {
+        left: 40px;
+    }
+
+}
+
+
+@media screen and (max-width:565px){
+
+    .titleProfil {
+
+        font-size: 20px;
+    }
+
+    .roleProfil {
+
+        font-size: 24px;
+    }
+
+    .commentProfil {
+
+        font-size: 30px;
+    }
+    
+}
+
+@media screen and (max-width:1188px) {
+
+    .profilCenter
+ {
+
+    margin-inline: 100px;
+}
+
+    .section {
+    margin-inline: 100px;
+   
+}
+}
+
+@media screen and (max-width:989px) {
+
+      .profilCenter
+ {
+
+    margin-inline: 30px;
+}
+
+ .section {
+    margin-inline: 30px;
+   
+}
+    
+}
+
+@media  screen and (max-width:730px) {
+
+        .elementContact1 {
+        width: 200px;
+    }
+
+        .elementContact {
+        width: 418px;
+    }
+
+        .elementContactMessage {
+        width: 418px;
+    }
+    
+        .btn-form {
+        width: 418px;
+    }
+
+    .gradeColor9 {
+
+        display: block;
+    }
+}
+
+
+@media  screen and (max-width:540px) {
+
+    .elementFormUser {
+    display: grid;
+    justify-content: flex-start;
+    column-gap: 20px;
+}
+
+    .elementContact{
+        width: 318px;
+
+    }
+
+        .elementContact1 {
+        width: 318px;
+    }
+        .elementContactMessage{
+        width: 318px;
+    }
+
+        .btn-form {
+        width: 318px;
+    }
+}
+
+@media screen and (max-width:460px){
+
+
+     .elementContact{
+        width: 250px;
+
+    }
+
+        .elementContact1 {
+        width: 250px;
+    }
+        .elementContactMessage{
+        width: 250px;
+    }
+
+        .btn-form {
+        width: 250px;
+    }
+}
+
+/*
+.elementContact:hover {
+
+ box-shadow: 0px 0px 3px 2px #D01CFD;
+
+
+}*/
+
+
+ .elementContact:focus , .elementContactMessage:focus , .elementContact1:focus  {
+
+     box-shadow: 0px 0px 3px 2px #D01CFD;
+
+      transition: 1000ms;
+
+
+ }
+
+/*
+@media screen and (max-width:392px){
+
+    .titleProfil {
+
+        font-size: 18px;
+    }
+
+    .roleProfil {
+
+        font-size: 20px;
+    }
+
+    .commentProfil {
+
+        font-size: 19px;
+    }
+    
+}*/
