@@ -307,13 +307,13 @@ formButton.addEventListener('submit', async (e) => {
 
     setTimeout(() => {
 
-      if (Toast.style.display === '') {
+      if (Toast.style.display === 'none') {
 
         Toast.style.display = 'flex'
         
       }
       else {
-        Toast.style.display = ''
+        Toast.style.display = 'none'
       }
       
     },1000)
