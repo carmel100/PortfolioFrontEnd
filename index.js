@@ -294,7 +294,7 @@ formButton.addEventListener('submit', async (e) => {
 
 
   try {
-    const response = await fetch('http://localhost:3000', {
+    const response = await fetch('https://portfoliobackend-asio.onrender.com', {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
