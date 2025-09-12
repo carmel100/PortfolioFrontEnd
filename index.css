@@ -1127,3 +1127,18 @@ display: none;
     }
     
 }*/
+
+.Toast {
+    position: fixed;
+    top: 90px;
+    left: 650px;
+    width: 200px;
+    height: 68px;
+    font-size: 25px;
+    background: linear-gradient(264deg, #d01cfd, #40ff7fb8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
