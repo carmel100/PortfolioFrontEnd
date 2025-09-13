@@ -329,6 +329,9 @@ try {
 
   showToast("Success", "success");
 
+   document.querySelector("form").reset();
+
+
 } catch (error) {
   console.error("Erreur lors de l'envoi :", error);
 
