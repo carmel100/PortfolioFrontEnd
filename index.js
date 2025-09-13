@@ -320,7 +320,7 @@ formButton.addEventListener('submit', async (e) => {
        Toast.textContent = ''
       }
       
-    },1000)
+    },300)
 
   } catch (error) {
     console.error("Erreur lors de l'envoi :", error);
@@ -340,7 +340,7 @@ formButton.addEventListener('submit', async (e) => {
        Toast.textContent = ''
       }
       
-    },1000)
+    },300)
   }
 });
 
