@@ -306,24 +306,24 @@ formButton.addEventListener('submit', async (e) => {
     console.log("Réponse serveur :", data);
 
   Toast.style.display = 'flex';
-Toast.textContent = 'Success';
+Toast.children[0].textContent = 'Success';
 
 // Masquer après 3 secondes
 setTimeout(() => {
   Toast.style.display = 'none';
-  Toast.textContent = '';
+ Toast.children[0].textContent = '';
 }, 3000);
 
   } catch (error) {
     console.error("Erreur lors de l'envoi :", error);
 
     Toast.style.display = 'flex';
-Toast.textContent = 'Failure';
+Toast.children[0].textContent = 'Failure';
 
 // Masquer après 3 secondes
 setTimeout(() => {
   Toast.style.display = 'none';
-  Toast.textContent = '';
+  Toast.children[0].textContent = '';
 }, 3000);
   }
 });
