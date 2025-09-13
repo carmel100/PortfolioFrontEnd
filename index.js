@@ -319,6 +319,11 @@ try {
     body: JSON.stringify({ nom, prenom, email, telephone, message })
   });
 
+  // Si le serveur renvoie une erreur HTTP (ex: 400, 500)
+  if (!response.ok) {
+    throw new Error(`Erreur HTTP : ${response.status}`);
+  }
+
   const data = await response.json();
   console.log("Réponse serveur :", data);
 
