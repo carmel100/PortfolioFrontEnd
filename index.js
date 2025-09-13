@@ -309,11 +309,15 @@ formButton.addEventListener('submit', async (e) => {
 
       if (Toast.style.display === 'none') {
 
-        Toast.style.display = 'flex'
+       Toast.style.display = 'flex'
+        
+        Toast.textContent = 'Success'
         
       }
       else {
         Toast.style.display = 'none'
+
+       Toast.textContent = ''
       }
       
     },1000)
@@ -327,11 +331,13 @@ formButton.addEventListener('submit', async (e) => {
 
         Toast.style.display = 'flex'
 
-        
+        Toast.textContent = 'Failure'
         
       }
       else {
         Toast.style.display = ''
+
+       Toast.textContent = ''
       }
       
     },1000)
