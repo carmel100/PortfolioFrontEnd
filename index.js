@@ -281,6 +281,23 @@ elementP.forEach((d) => {
 
   const Toast = document.querySelector('.Toast')
 
+function showToast(message, type = "info") {
+  Toast.style.display = "flex";
+  Toast.children[0].textContent = message;
+
+  // si tu veux différencier les styles (vert pour success, rouge pour failure)
+  Toast.className = `Toast ${type}`;
+
+  setTimeout(() => {
+    Toast.style.display = "none";
+    Toast.children[0].textContent = "";
+    Toast.className = "Toast"; // reset des classes
+  }, 3000);
+}
+
+
+  
+
  const formButton =  document.querySelector('.margeForm')
 
 formButton.addEventListener('submit', async (e) => {
@@ -293,39 +310,26 @@ formButton.addEventListener('submit', async (e) => {
   const message = document.querySelector('#message').value;
 
 
-  try {
-    const response = await fetch('https://portfoliobackend-asio.onrender.com', {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({ nom, prenom, email, telephone, message })
-    });
+try {
+  const response = await fetch('https://portfoliobackend-asio.onrender.com', {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ nom, prenom, email, telephone, message })
+  });
 
-    const data = await response.json();
-    console.log("Réponse serveur :", data);
+  const data = await response.json();
+  console.log("Réponse serveur :", data);
 
-  Toast.style.display = 'flex';
-Toast.children[0].textContent = 'Success';
+  showToast("Success", "success");
 
-// Masquer après 3 secondes
-setTimeout(() => {
-  Toast.style.display = 'none';
- Toast.children[0].textContent = '';
-}, 3000);
+} catch (error) {
+  console.error("Erreur lors de l'envoi :", error);
 
-  } catch (error) {
-    console.error("Erreur lors de l'envoi :", error);
+  showToast("Failure", "error");
+}
 
-    Toast.style.display = 'flex';
-Toast.children[0].textContent = 'Failure';
-
-// Masquer après 3 secondes
-setTimeout(() => {
-  Toast.style.display = 'none';
-  Toast.children[0].textContent = '';
-}, 3000);
-  }
 });
 
 
