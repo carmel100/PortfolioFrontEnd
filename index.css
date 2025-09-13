@@ -1129,16 +1129,23 @@ display: none;
 }*/
 
 .Toast {
-    position: fixed;
-    top: 70px;
-    left: 650px;
-    width: 200px;
-    height: 68px;
-    font-size: 25px;
-    background: linear-gradient(264deg, #d01cfd, #40ff7fb8);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
+  display: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
 }
 
+.Toast.success {
+  background-color: #4caf50; /* vert */
+}
+
+.Toast.error {
+  background-color: #f44336; /* rouge */
+}
+
+.Toast.info {
+  background-color: #2196f3; /* bleu */
+}
