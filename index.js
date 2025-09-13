@@ -305,42 +305,26 @@ formButton.addEventListener('submit', async (e) => {
     const data = await response.json();
     console.log("Réponse serveur :", data);
 
-    setTimeout(() => {
+  Toast.style.display = 'flex';
+Toast.textContent = 'Success';
 
-      if (Toast.style.display === 'none') {
-
-       Toast.style.display = 'flex'
-        
-        Toast.textContent = 'Success'
-        
-      }
-      else {
-        Toast.style.display = 'none'
-
-       Toast.textContent = ''
-      }
-      
-    },300)
+// Masquer après 3 secondes
+setTimeout(() => {
+  Toast.style.display = 'none';
+  Toast.textContent = '';
+}, 3000);
 
   } catch (error) {
     console.error("Erreur lors de l'envoi :", error);
 
-      setTimeout(() => {
+    Toast.style.display = 'flex';
+Toast.textContent = 'Failure';
 
-      if (Toast.style.display === '') {
-
-        Toast.style.display = 'flex'
-
-        Toast.textContent = 'Failure'
-        
-      }
-      else {
-        Toast.style.display = ''
-
-       Toast.textContent = ''
-      }
-      
-    },300)
+// Masquer après 3 secondes
+setTimeout(() => {
+  Toast.style.display = 'none';
+  Toast.textContent = '';
+}, 3000);
   }
 });
 
