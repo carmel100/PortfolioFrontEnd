@@ -83,7 +83,11 @@ list-style: none;
    
 }
 
-
+.modifLink {
+    text-decoration: none;
+    color: unset;
+	
+}
 
 
 .second-point-child::after {
